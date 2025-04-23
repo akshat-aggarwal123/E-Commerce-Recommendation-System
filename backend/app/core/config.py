@@ -1,0 +1,1 @@
+MODEL_PATH = 'backend/models/recommendation_model.joblib'
