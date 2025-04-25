@@ -1,0 +1,1 @@
+MODEL_PATH = '../model_output/recommendation_model.joblib'

@@ -1,8 +1,8 @@
 import pandas as pd
 from sklearn.preprocessing import LabelEncoder
 from joblib import load
-from backend.app.utils.data_loader import DataLoader
-from backend.app.core.config import MODEL_PATH
+from app.utils.data_loader import DataLoader
+from app.core.config import MODEL_PATH
 
 class RecommendationService:
     def __init__(self):

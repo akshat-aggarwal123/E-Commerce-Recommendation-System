@@ -1,6 +1,6 @@
 from fastapi import APIRouter, HTTPException
 from joblib import load
-from backend.app.services.recommendation_service import RecommendationService
+from app.services.recommendation_service import RecommendationService
 
 router = APIRouter()
 service = RecommendationService()
