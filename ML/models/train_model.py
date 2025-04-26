@@ -15,7 +15,7 @@ class RecommendationModel:
         
         # Base directory of this script
         self.base_dir = os.path.dirname(os.path.abspath(__file__))
-        self.customer_data_path = os.path.join(self.base_dir, '../data/customer_data_collection.csv')
+        self.customer_data_path = os.path.join(self.base_dir, '../data/raw/customer_data_collection.csv')
         self.product_data_path = os.path.join(self.base_dir, '../data/raw/product_recommendation_data.csv')
         self.model_save_path = os.path.join(self.base_dir, '../models/recommendation_model.joblib')
         
@@ -191,7 +191,7 @@ class RecommendationModel:
                         self.pbar.update(1)
                 
                 callback = ProgressCallback(pbar)
-                self.model.fit(X_train, y_train, callback=callback)
+                self.model.fit(X_train, y_train, callback=callback) # type: ignore
             
             # Calculate and print accuracy
             train_accuracy = self.model.score(X_train, y_train)
