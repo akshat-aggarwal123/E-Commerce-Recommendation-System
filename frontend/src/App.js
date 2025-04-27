@@ -1,3 +1,4 @@
+// src/App.js
 import { useState } from 'react';
 import SearchBar from './components/SearchBar';
 import RecommendationList from './components/RecommendationList';
