@@ -19,7 +19,7 @@ export const getRecommendations = async (customerId, topN = 5) => {
 export const getGeminiResponse = async (prompt) => {
   try {
     const apiKey = import.meta.env.VITE_GEMINI_API_KEY; // Access environment variable
-    console.log("API Key:", apiKey); // For debugging only, remove in production
+   // console.log("API Key:", apiKey); // For debugging only, remove in production
 
     const response = await axios.post(
       `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`,
