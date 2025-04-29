@@ -1,0 +1,47 @@
+/* RecommendationList.css */
+.recommendations-container {
+    margin: 20px 0;
+  }
+
+  .ai-insights {
+    background-color: #f0f8ff;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .insight-content {
+    line-height: 1.6;
+  }
+
+  .recommendation-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+
+  .product-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+  }
+
+  .product-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .loading-indicator {
+    text-align: center;
+    padding: 20px;
+    font-style: italic;
+    color: #666;
+  }
+
+  .no-recommendations {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+  }
